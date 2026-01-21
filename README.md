@@ -1,6 +1,6 @@
 # Netflix Content Mix Over Time (Excel Analysis)
 
-##Project Overview
+## Project Overview
 
 This project looks at how Netflix’s content offering has changed over time, focusing on the balance between Movies and TV Shows. The aim is to demonstrate clear analysis and simple communication using Excel, without unnecessary complexity.
 
@@ -63,5 +63,6 @@ The project is descriptive only and does not attempt to predict future trends.
 netflix_content_mix.xlsx – data, analysis and charts
 
 images/ – screenshots of the charts
+
 
 README.md
