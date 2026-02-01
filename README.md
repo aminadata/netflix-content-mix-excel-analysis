@@ -60,16 +60,15 @@ The project is descriptive only and does not attempt to predict future trends.
 
 ## Files
 
-netflix_content_mix.xlsx – data, analysis and charts
-
-images/ – screenshots of the charts
-
-
-README.md
+- netflix_content_mix.xlsx – Excel-based analysis and charts  
+- images/ – screenshots of Excel charts  
+- notebooks/ – Python notebook reproducing the analysis  
+- outputs/ – Python-generated tables and charts
 
 ## Python Extension (Reproducibility & Automation)
 
 This analysis was later reproduced in Python using pandas to demonstrate date cleaning, aggregation, and reproducible reporting. The Python workflow mirrors the original Excel-based logic and confirms the same conclusions about Netflix’s evolving content mix over time.
 
 The purpose of this extension was to show how a business-focused analysis can be translated from Excel into code to support automation and scalability, while keeping the insight and conclusions consistent.
+
 
