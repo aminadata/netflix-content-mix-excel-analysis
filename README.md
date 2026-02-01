@@ -66,3 +66,10 @@ images/ – screenshots of the charts
 
 
 README.md
+
+## Python Extension (Reproducibility & Automation)
+
+This analysis was later reproduced in Python using pandas to demonstrate date cleaning, aggregation, and reproducible reporting. The Python workflow mirrors the original Excel-based logic and confirms the same conclusions about Netflix’s evolving content mix over time.
+
+The purpose of this extension was to show how a business-focused analysis can be translated from Excel into code to support automation and scalability, while keeping the insight and conclusions consistent.
+
