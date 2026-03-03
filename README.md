@@ -1,74 +1,53 @@
-# Netflix Content Mix Over Time (Excel Analysis)
+# Netflix Content Strategy Analysis
 
-## Project Overview
+## Executive Summary: Tracking the Shift in Content Mix
+This project provides a longitudinal analysis of Netflix’s content acquisition strategy. By examining the year over year additions of Movies versus TV Shows, the analysis quantifies the platform’s strategic pivot toward serialised content. The findings provide clear visibility into how Netflix matured its library from a film dominant catalogue to a balanced ecosystem, demonstrating a capability to extract actionable trends from unstructured time series data.
 
-This project looks at how Netflix’s content offering has changed over time, focusing on the balance between Movies and TV Shows. The aim is to demonstrate clear analysis and simple communication using Excel, without unnecessary complexity.
+## Business Questions
+How has the composition of the Netflix library evolved over the last decade?
 
-## Business Question
+Can we identify the specific point where the platform prioritised serialised content?
 
-How has Netflix’s mix of Movies and TV Shows changed over time?
+Does the growth trajectory of new additions suggest a shift toward long term viewer retention?
 
-## Dataset
+## My Approach: Bridging Excel and Python
+To ensure consistency and scalability, this project was executed in two phases.
 
-Source: Netflix Movies and TV Shows dataset (Kaggle)
+Phase 1: Strategic Analysis in Excel. Using PivotTables and visual dashboards, I modelled the growth of the content library to identify inflection points in acquisition strategy. This ensured the findings were accessible to non technical stakeholders.
 
-Each row represents a title available on Netflix.
-
-This analysis looks at the year each film or TV programme was added to Netflix, rather than when it was originally made.
-
-## Tools Used
-
-Microsoft Excel (data preparation, PivotTables and charts)
-
-## Approach
-
-Created a year field from the date each title was added to Netflix.
-
-Analysed how many Movies and TV Shows were added each year.
-
-Looked separately at:
-
-Overall growth in content added each year
-
-The share of Movies compared to TV Shows
-
-Used two charts to keep the analysis clear and easy to understand.
+Phase 2: Reproducibility through Python. To demonstrate automation capabilities, I reproduced the entire Excel workflow using Python and pandas. This transition shows how a manual analysis can be scaled into a robust, repeatable pipeline, reducing the risk of human error in recurring reports.
 
 ## Key Findings
+The Growth Peak: The platform’s content acquisition accelerated significantly in the mid 2010s, reaching a peak deployment in 2019.
 
-The number of titles added to Netflix increased quickly from the mid-2010s, reaching a peak around 2019.
+The Strategic Pivot: While Movies remain the primary volume driver, TV Shows now consistently represent approximately one third of all new content. This sustained shift highlights a clear strategy to drive recurring engagement through serialised storytelling.
 
-Movies remained the largest type of content added each year.
+Scalable Insights: The analysis confirms that data backed trends identified in Excel are fully reproducible through automated scripts, allowing for real time monitoring as new data becomes available.
 
-Over time, TV Shows made up a larger share of new additions, settling at roughly one third of content added in recent years.
+## Strategic Recommendations
+The data highlights a clear pivot from volume based acquisition to retention focused content strategy. Based on this analysis, I have identified three strategic implications:
 
-This suggests a gradual but sustained shift towards series content.
+Retention via Serialisation: The shift toward TV shows confirms that the platform is betting on long term viewer retention rather than immediate acquisition. We should investigate if this correlates with reduced subscriber churn rates in specific regions.
 
-## Charts Included
+Competitor Benchmarking: This methodology can be applied to competitive intelligence. By performing the same analysis on rival streaming services, we can identify which competitors are over indexing on movies versus series, allowing for targeted content procurement strategies.
 
-Netflix content additions by year (Movies vs TV Shows)
+Operational Forecasting: The established growth trajectory provides a baseline for future capacity planning. We should use this model to forecast the required server and storage scaling based on the projected shift in content mix.
 
-Share of Netflix content additions by year
+## Conclusion: The "So What?"
+The primary insight is that Netflix has matured from a broad content aggregator into a specialised platform prioritising bingeable content. For a business stakeholder, this means the value of the platform is no longer just in the number of titles added, but in the engagement duration those titles generate. Any future data projects should shift focus from content quantity to viewer engagement metrics to better align with the platform's current strategic direction.
 
-Screenshots of both charts are included in this repository so the findings can be viewed without opening the Excel file.
+## Technical Methodology
+Data Cleansing: Filtered null date entries to maintain time series integrity.
 
-## Assumptions and Limitations
+Feature Engineering: Extracted year based features from acquisition dates to enable granular temporal grouping.
 
-Titles with missing dates were excluded from the time-based analysis.
+Reproducibility: Maintained logical parity between Excel visualisations and Python based data frames.
 
-The project is descriptive only and does not attempt to predict future trends.
+## Files Included
+netflix_content_mix.xlsx – The primary Excel based analytical model.
 
-## Files
+notebooks/ – The Python reproduction pipeline for automated reporting.
 
-- netflix_content_mix.xlsx – Excel-based analysis and charts  
-- images/ – screenshots of Excel charts  
-- notebooks/ – Python notebook reproducing the analysis  
-- outputs/ – Python-generated tables and charts
+images/ – Visualisations of the core content trends for quick stakeholder review.
 
-## Python Extension (Reproducibility & Automation)
-
-This analysis was later reproduced in Python using pandas to demonstrate date cleaning, aggregation, and reproducible reporting. The Python workflow mirrors the original Excel-based logic and confirms the same conclusions about Netflix’s evolving content mix over time.
-
-The purpose of this extension was to show how a business-focused analysis can be translated from Excel into code to support automation and scalability, while keeping the insight and conclusions consistent.
-
-
+#### This analysis demonstrates a commitment to both clear data storytelling and the technical rigour required to automate business reporting.
